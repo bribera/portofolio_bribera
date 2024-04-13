@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,700;1,800&family=Parisienne&family=Poppins:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Red+Hat+Display:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,700&family=Rubik:ital,wght@0,400;0,500;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,700;1,800&family=Parisienne&family=Poppins:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Red+Hat+Display:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,700&family=Rubik:ital,wght@0,400;0,500;1,500;1,600&display=swap');
+
+/* @font-face{
+  font-family: Roboto, sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,700;1,800&family=Parisienne&family=Poppins:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Red+Hat+Display:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,700&family=Rubik:ital,wght@0,400;0,500;1,500;1,600&display=swap");
+} */
+
+.font2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  /* background-color: dark; */
+  font-family: "Poppins", sans-serif;
+  /* color: white; */
+  overflow: hidden;
+}
+
+.second{
+  color: #ffb400,
+}
+.dark{
+  color: #111111
+}
+
+@layer components {
+  h1{
+    @apply text-[35px] font2 leading-relaxed
+  }
+  .c100{
+    @apply w-40 h-40 rounded-full bg-black relative border-[12px] border-opacity-10 border-slate-100
+  }
+  .c100::after{
+    @apply w-40 h-40  absolute block transition-all duration-200 ease-in rounded-full
+  }
+
+  .c100 span {
+    @apply z-10  leading-normal top-[50px] left-[40px] text-3xl text-white text-center transition-all duration-200 ease-out whitespace-nowrap block absolute
+  }
+
+  .c100 .slice {
+    @apply w-full h-full absolute
+  }
+  /* .c100.p50 .bar {
+    @apply rotate-[180deg]
+  }
+  .c100 .bar {
+    @apply border-8 border-second 
+  } */
+}
+.c100 .slice {
+  clip: rect(0px, 1em, 1em, 0.5em);
+
+}
+
+/* .c100 .bar {
+  position: absolute;
+  clip: rect(0px, 0.5em, 2em, 0px);
+  border-radius: 50%;
+ 
+} */
