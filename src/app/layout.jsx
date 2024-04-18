@@ -4,7 +4,6 @@ import './globals.css'
 import {ThemeProvider} from 'next-themes'
 import Navbar from '@/components/Navbar'
 import ChangeColor from '@/components/ChangeColor'
-import Header from '@/components/Header'
 import { useRouter, usePathname } from 'next/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
 import Transition from '@/components/Transition'
@@ -28,7 +27,6 @@ export default function RootLayout({ children }) {
             <motion.div className="h-screen" key={router.asPath}>
                 <Transition />
                 <Navbar />
-                <Header />
                 {children}
             </motion.div>
           </AnimatePresence>
