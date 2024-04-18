@@ -1,7 +1,7 @@
 import React from 'react'
 import {HiDocumentDownload} from 'react-icons/hi'
 
-const PDF_FILE_URL ="http://localhost:3000/bribera_agossou_cv.pdf"
+const PDF_FILE_URL ="http://localhost:3000/bribera_cv.pdf"
 
 
 const ButtonCV = () => {

@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -7,7 +7,6 @@ import { HiEye } from 'react-icons/hi'
 const posts = [
   {
     id: 1,
-    // categorie: "Logo",
     title: "happy Science",
     image: "/first.jpg",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, eaque? Vero ipsa amet voluptatem iure! Pariatur, inventore, dolores debitis est ipsam iure at",

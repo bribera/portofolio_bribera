@@ -1,5 +1,4 @@
 'use client'
-/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect, useState } from 'react'
 import ButtonCV from './ButtonCV'
 import Skills from './Skills'
@@ -66,7 +65,7 @@ const About = () => {
                   <span className='absolute top-0 text-2xl'>+</span>
                 </div>
                 <div className="flex items-center justify-center gap-3">
-                  <p className="uppercase font-light ">Années d'expériences</p>
+                  <p className="uppercase font-light ">Années d&apos;expériences</p>
                   <div className="w-8 h-[1px] rounded-full bg-slate-400"></div>
                 </div>
               </div>
