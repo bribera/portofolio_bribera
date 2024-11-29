@@ -7,20 +7,21 @@ import { IoMoonSharp } from "react-icons/io5";
 
 
 const ChangeColor = () => {
-    const {theme, setTheme} = useTheme();
+    const {theme, setTheme, resolvedTheme} = useTheme();
     const [mounted, setMounted] = useState(false)   
 
     
     useEffect(() => {
         // const theme = localStorage.getItem("theme")
         // if (theme === "dark") {
-            //     setDarkMode(true)
-            // }
+        //         setDarkMode(true)
+        //     }
             setMounted(true)
     }, [])
         
     if(!mounted) return null
-    const currentTheme = theme === 'system' ? systemTheme : theme
+
+    // const currentTheme = theme === 'system' ? systemTheme : theme
 
     // useEffect(() => { 
     //     if (darkMode) {
@@ -37,7 +38,7 @@ const ChangeColor = () => {
     <div> 
       <div className=" absolute top-5 right-[1%] z-50" >         
            {
-               currentTheme === 'dark' ? (
+               resolvedTheme === 'dark' ? (
                    <button className="bg-gray-700  text-center rounded-full cursor-pointer dark:bg-gray-700 border-second border-2 p-2" onClick={() => setTheme('light')}>
                         <IoSunnyOutline className='ml-auto text-xl text-white' />
                     </button>

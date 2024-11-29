@@ -1,16 +1,8 @@
 'use client'
 import React from 'react'
 import {RxPencil2, RxDesktop, RxReader, RxRocket, RxCamera} from 'react-icons/rx'
-// import { MdOutlinePhotoCamera } from "react-icons/md";
-
-
-import { motion } from 'framer-motion'
-import {variants} from '../variants'
-
-
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { FreeMode, Pagination } from 'swiper/modules'
-
 import 'swiper/css'
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
@@ -55,7 +47,7 @@ const ServiceSlide = () => {
     freeMode={true}
     pagination={{
         clickable: true,
-        // dynamicBullets:true,
+        dynamicBullets:true,
     }}
     modules={[FreeMode, Pagination]}
     className= "container h-[240px] xl:h-[340px]  xl:w-auto mx-auto"
